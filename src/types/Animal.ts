@@ -2,9 +2,9 @@ export type AnimalType = "AVE" | "MAMIFERO" | "REPTIL" | "ANFIBIO" | "PEZ";
 
 export interface Animal {
   id: number;
-  name: string;
-  type: AnimalType;
-  description: string;
+  nombre: string;
+  tipo: AnimalType;
+  descripcion: string;
   wikipediaUrl: string;
   imagenUrl: string;
 }
