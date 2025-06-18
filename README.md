@@ -37,40 +37,74 @@ src/
 └── main.tsx             # Punto de entrada
 ```
 
-## 🚀 Instalación y uso
+## 🚀 Guía de Instalación Detallada
 
-1. **Clonar el repositorio**
+### Prerrequisitos
+
+- Node.js (v18 o superior)
+- pnpm (gestor de paquetes)
+- El backend debe estar corriendo en http://localhost:3000
+
+### 1. Preparación del entorno
 
 ```bash
+# Instalar pnpm si no está instalado
+npm install -g pnpm
+
+# Clonar el repositorio (si aún no lo has hecho)
 git clone <url-del-repositorio>
-cd frontend
+cd prueba-tecnica-fsg-frontend
 ```
 
-2. **Instalar dependencias**
+### 2. Instalación de dependencias
 
 ```bash
+# Instalar todas las dependencias del proyecto
 pnpm install
 ```
 
-3. **Configurar variables de entorno**
+### 3. Configuración del entorno
 
-Crea un archivo `.env` en la raíz del proyecto con la URL del backend:
+1. Crear archivo de variables de entorno:
+   - Crea un nuevo archivo llamado `.env` en la raíz del proyecto
+   - Añade la siguiente configuración:
 
-```
+```bash
 VITE_API_URL_BACKEND=http://localhost:3000
 ```
 
-4. **Iniciar el servidor de desarrollo**
+### 4. Iniciar el proyecto
 
 ```bash
+# Iniciar en modo desarrollo
 pnpm dev
 ```
 
-5. **Generar build de producción**
+La aplicación estará disponible en: http://localhost:5173
+
+### 5. Comandos adicionales útiles
 
 ```bash
+# Ejecutar tests
+pnpm test
+
+# Crear build de producción
 pnpm build
+
+# Previsualizar build de producción
+pnpm preview
 ```
+
+### 6. Verificación de la instalación
+
+1. Abre tu navegador y visita http://localhost:5173
+2. Deberías ver la página principal con el catálogo de animales
+3. Verifica que puedas:
+   - Ver el listado de animales
+   - Realizar búsquedas por ID
+   - Abrir el modal de detalles al hacer clic en una card
+   - Crear nuevos animales
+   - Eliminar animales existentes
 
 ## 💻 Funcionalidades detalladas
 
